@@ -38,5 +38,6 @@ new int(1314);
 int *a = new int(1314);
 
 return *a;
+## 引用
 
 
