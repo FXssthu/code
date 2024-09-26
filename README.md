@@ -39,5 +39,8 @@ int *a = new int(1314);
 
 return *a;
 ## 引用
+**量子纠缠**
+int a = 1314;
+int &b = a;
 
 
