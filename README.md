@@ -67,6 +67,7 @@ int *const ref = &a;
 const int& a；
 
 防止a值被误操作
+Application：void func(const int &val);
 
 
 
