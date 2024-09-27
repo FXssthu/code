@@ -80,6 +80,8 @@ Application：void func(const int &val);
 ### 函数重载
 函数默认参数和函数重载可能会发生冲突，一般不建议同时使用
 
+## C++类和对象
+
 
 
 
