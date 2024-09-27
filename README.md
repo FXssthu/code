@@ -83,7 +83,19 @@ Application：void func(const int &val);
 ## C++类和对象
 ### 封装：属性和服务打包在一起；
 ###    ：接口权限设置；
+#### 类和对象：
 
+struct 相当于基本类型（int double string 或者int *）的组合
+
+类相当于高级的struct 
+
+
+对象相当于类的实例
+#### 实战
+
+实战创建学生的类时，string类型的变量赋值要用"  "引起来；
+
+否则会警告！
 
 
 
