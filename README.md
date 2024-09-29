@@ -142,6 +142,52 @@ public:
 ```
 **构造函数进阶**
 
+无参构造 有参构造
+
+普通构造 拷贝构造
+
+```cpp
+#include <iostream>
+#include <string.h>
+using namespace std;
+class student
+{
+
+    string id;
+    string name;
+
+public:
+    student()
+    {
+        cout << "Start..." << endl;
+    }
+    student(int a)
+    {
+        this->id = "1120233198";
+        this->name = "FanYuchen!";
+        cout << "A@-Start!" << endl;
+    }
+    student(const student &stu01)
+    {
+        id = stu01.id;
+        name = stu01.name;
+        cout << "copy-Start!" << endl;
+    }
+    ~student()
+    {
+        cout << "End!" << endl;
+    }
+};
+
+int main()
+{
+    student stu1;
+    student stu2(1);
+    student stu3(stu1);
+    cout << "Hello!" << endl;
+    return 0;
+}
+```
 
 
 
