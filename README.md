@@ -117,6 +117,20 @@ private：仅本小类内访问
 ### 初始化 与 清理
 构造函数 析构函数
 
+构造函数如果私有，那么class将不可创建对象
+such as：
+‘‘‘
+class student
+{
+    public:
+    student()
+    {
+        cout << "Start..." << endl;
+    }
+};
+’’’
+
+
 
 
 
