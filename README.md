@@ -115,17 +115,28 @@ private：仅本小类内访问
 **总是忘了李括号**
 
 ### 初始化 与 清理
-构造函数 析构函数
+**构造函数** 
+
+有参无返
+
+**析构函数**
+
+无参无返
 
 构造函数如果私有，那么class将不可创建对象
+
 正确的例子如下
 ```cpp
 class student
 {
-    public:
-    student()
+public:
+    student()//构造函数
     {
         cout << "Start..." << endl;
+    }
+    ~student()//析构函数
+    {
+        cout << "End!" << endl;
     }
 };
 ```
