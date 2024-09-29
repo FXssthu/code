@@ -228,10 +228,10 @@ int main()
 }
 ```
 输出为：
-    Start...
-    stu1的地址:0x7ffd55467fe0
-    stu2的地址:0x7ffd55467fe0
-    End!
+        Start...
+        stu1的地址:0x7ffd55467fe0
+        stu2的地址:0x7ffd55467fe0
+        End!
         
 
 
