@@ -181,13 +181,57 @@ public:
 
 int main()
 {
+//括号法调用！
     student stu1;
     student stu2(1);
     student stu3(stu1);
     cout << "Hello!" << endl;
+//显式调用,关键在于匿名对象的使用
+    
+//隐式调用,省略了显式调用的匿名对象
     return 0;
 }
 ```
+
+**拷贝构造函数进阶**
+
+调用时机：1.利用已创建对象进行拷贝；
+
+        2.创建函数是值传递时；
+        
+explaining:参数是值传递的函数在调用时，会复制一份完全相同的变量，编译器在此时使用了构造函数
+
+           如果已创建拷贝构造函数，就使用存在的函数，如果没有，编译器会使用默认的拷贝构造函数
+
+        3.返回值被调用，编译器优化，可能看不到
+``` cpp
+student dowork()
+{
+    student stu1;
+    cout << "stu1的地址:" << &stu1 << endl;
+    return stu1;
+}
+void test()
+{
+    student stu2(dowork());
+    cout << "stu2的地址:" << &stu2 << endl;
+}
+int main()
+{
+    test();
+    return 0;
+}
+```
+输出为：
+```cpp
+Start...
+stu1的地址:0x7ffd55467fe0
+stu2的地址:0x7ffd55467fe0
+End!
+```
+        
+
+
 
 
 
