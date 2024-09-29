@@ -228,7 +228,7 @@ int main()
 }
 ```
 输出为：
-```python
+```
         Start...
         stu1的地址:0x7ffd55467fe0
         #stu2的地址:0x7ffd55467fe0
