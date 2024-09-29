@@ -209,7 +209,7 @@ int main()
         如果已创建拷贝构造函数，就使用存在的函数，如果没有，编译器会使用默认的拷贝构造函数
 
 3.返回值被调用，编译器优化，可能看不到
-``` 
+``` cpp
 student dowork()
 {
     student stu1;
@@ -229,10 +229,10 @@ int main()
 ```
 输出为：
 ```
-        Start...
-        stu1的地址:0x7ffd55467fe0
-        #stu2的地址:0x7ffd55467fe0
-        //End!
+Start...
+stu1的地址:0x7ffd55467fe0
+stu2的地址:0x7ffd55467fe0
+End!
 ```     
 
 
