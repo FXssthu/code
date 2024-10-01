@@ -281,8 +281,19 @@ student& add(const student &stu1)
 ```
 拷贝构造函数，普通返回会创建一个新的副本，引用才是本体
 
+空指针调用成员函数
 
-
+```cpp
+  void func() const
+    {
+        this->age =100;
+    }
+```
+想修改
+```cpp
+mutable int age;
+```
+const作用：锁死const对应的值；
 
 
 
