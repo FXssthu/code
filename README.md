@@ -284,10 +284,15 @@ student& add(const student &stu1)
 空指针调用成员函数
 
 ```cpp
+//常函数
   void func() const
     {
         this->age =100;
     }
+int main()
+{
+    const student stu1;
+}
 ```
 想修改
 ```cpp
@@ -295,9 +300,14 @@ mutable int age;
 ```
 const作用：锁死const对应的值；
 
+常对象只能调用常函数；
 
+### 友元
+**全局函数**
 
+**类**
 
+**类内对象**
 
 
 
