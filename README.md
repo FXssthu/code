@@ -16,6 +16,7 @@
 
 **操作系统管理**
 ### 栈区
+[区别栈和栈区、堆区和堆](https://blog.csdn.net/panjiapengfly/article/details/102665381)
 **编译器分配**
 
 不能返回局部变量的指针的原因是：
